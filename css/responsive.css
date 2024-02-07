@@ -1,0 +1,419 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 1360px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+
+@media (max-width: 1850px) {
+  .info_section::after {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .info_section::after {
+    width: 290px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .info_section::after {
+    width: 15%;
+  }
+  .register_row {
+    margin: 0 15px;
+  }
+}
+@media (max-width: 1360px) {
+  .user_information {
+    width: 440px;
+    margin-left: 30px;
+  }
+  .user_image {
+    left: -50px;
+  }
+}
+@media (max-width: 1330px) {
+  .reservation_info {
+    position: initial;
+    display: flex;
+    flex-direction: initial;
+  }
+  .map {
+    width: 60%;
+    height: 100%;
+  }
+  .reservation_info .category_boxs {
+    margin-bottom: 0;
+  }
+  .registration_info {
+    padding-left: 0;
+    width: 920px;
+    margin: 0 auto;
+  }
+  .reservation_info {
+    justify-content: space-between;
+  }
+  .registration_info {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .info_section::after {
+    width: 18%;
+  }
+  .user_information {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    width: 500px;
+  }
+  .user_info_block {
+    width: 716px;
+  }
+  .user_image {
+    position: initial;
+  }
+  .user_info_block .rooms_tips {
+    font-size: 14px;
+  }
+  .user_info_block .guest {
+    width: 90px;
+  }
+  .user_info_block .room_tip {
+    width: 270px;
+  }
+}
+@media (max-width: 1280px) {
+  .user_information {
+    width: 440px;
+  }
+}
+@media (max-width: 1200px) {
+  .bg_image {
+    height: 192px;
+  }
+  .info_section::after {
+    width: 22%;
+  }
+  .hero_section {
+    margin-top: 0;
+  }
+  .news_block {
+    flex-direction: column;
+  }
+  .info_section::after {
+    content: none;
+  }
+  .information_block {
+    font-size: 14px;
+  }
+  .rooms_bg {
+    height: 190px;
+  }
+  .room_info {
+    font-size: 14px;
+  }
+  .rooms_img {
+    height: 380px;
+  }
+  .different_rooms {
+    height: 240px;
+  }
+  .user_profile {
+    margin-bottom: 30px;
+  }
+  .user_info_items {
+    flex-direction: column;
+  }
+  .sign_btn {
+    width: 110px;
+  }
+  .nav_ul .nav_li {
+    margin-right: 15px;
+  }
+  .rooms_info {
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .map {
+    width: 53%;
+  }
+}
+@media (max-width: 991px) {
+  .nav_ul .nav_li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .user_info_block {
+    width: 100%;
+  }
+  .user_info_block .room_tip {
+    width: 180px;
+  }
+  .hero_section {
+    margin-bottom: 30px;
+  }
+  .logo_ {
+    width: 120px;
+    height: 90px;
+  }
+  .header_block {
+    position: initial;
+  }
+  .register_row {
+    box-shadow: none;
+  }
+  .registration_block {
+    flex-direction: column;
+  }
+  .authorization_side,
+  .registration_side {
+    border-radius: 10px;
+  }
+  .registration_side,
+  .authorization_side {
+    padding: 30px;
+    box-shadow: 0;
+  }
+  .password_recovery .registration_side {
+    padding: 0 15px;
+  }
+  .registration_section {
+    padding-bottom: 50px;
+  }
+  .register_password_block {
+    flex-direction: column;
+  }
+  .password_block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .password_block:last-child {
+    margin-bottom: 0;
+  }
+  .register_items {
+    flex-direction: column;
+  }
+  .register_items .calendar_items {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 58px;
+  }
+  .register_items .calendar_items:last-child {
+    margin-bottom: 0;
+  }
+  .registration_bg {
+    height: 250px;
+  }
+  .registration_info {
+    width: 100%;
+  }
+  .registration_info .category_boxs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registration_info .category_sort {
+    width: 50% !important;
+    margin-bottom: 15px;
+  }
+  .room_tip {
+    width: auto;
+  }
+  .guest,
+  .conditions_item,
+  .rooms_items {
+    width: initial;
+  }
+  .conditions_item {
+    background-color: transparent;
+    display: block;
+  }
+  .reservation_info {
+    width: auto;
+    flex-direction: column;
+  }
+  .reservation_info .category_sort {
+    width: 100%;
+  }
+  .reservation_info .category_boxs {
+    margin-bottom: 20px;
+  }
+  .reservation_info .category_boxs,
+  .map {
+    width: 100%;
+  }
+  .Swiper_2 {
+    height: 250px;
+  }
+  .different_rooms .room_info {
+    font-size: 12px;
+  }
+  .user_info_block .conditions_item {
+    width: 150px;
+    text-align: center;
+    height: initial;
+  }
+  .user_info_block .rooms_items {
+    width: 90px;
+  }
+  .user_title {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .room_img {
+    height: 200px;
+  }
+  .sign_btn {
+    width: 90px;
+    height: 35px;
+    font-size: 10px;
+  }
+  .nav_li,
+  .mobile_number {
+    margin-bottom: 10px;
+  }
+  .reservation_block .guest {
+    padding-right: 31px;
+  }
+  .room_item {
+    flex-direction: column;
+    align-items: initial !important;
+  }
+  .room_item img {
+    display: none;
+  }
+  .rooms_types {
+    min-width: 150px;
+  }
+  .conditions_item,
+  .user_info {
+    text-align: center;
+  }
+  .reservation_box {
+    flex-direction: column;
+  }
+  .conditions_info {
+    width: 100%;
+  }
+  .conditions_info > div {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .br {
+    width: 100% !important;
+    justify-content: space-between;
+    border: none;
+    padding-right: 0;
+    flex-direction: initial;
+    margin-bottom: 10px;
+  }
+  .br:first-child {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .category_boxs {
+    margin-top: 0;
+  }
+  .category_boxs,
+  .category_sort {
+    width: 100%;
+  }
+  .sort_block {
+    justify-content: space-between;
+  }
+  .sort_block .category_sort {
+    width: 48%;
+  }
+  .nav_right_side .registration_block {
+    font-size: 12px;
+  }
+  .hero_section {
+    height: auto;
+    margin: 30px 0;
+    padding: 30px 0;
+  }
+  .bg_section {
+    height: 300px;
+  }
+  .gallery_section {
+    padding: 30px 0;
+  }
+  .gellery_bg,
+  .rooms_bg {
+    height: 200px;
+    background-position: center;
+  }
+  .footer_information {
+    flex-direction: column;
+  }
+  .rooms_info {
+    padding: 20px;
+  }
+  .registration_bg {
+    height: 120px;
+  }
+  .rooms_img {
+    height: 320px;
+    margin-bottom: 15px;
+  }
+  .bg_image {
+    height: 180px;
+  }
+  .contact_info {
+    margin-bottom: 15px;
+  }
+  .map_ {
+    height: 250px;
+  }
+}
+@media (max-width: 575px) {
+  .information_block {
+    width: 80%;
+    font-size: 10px;
+    line-height: normal;
+  }
+  .reservation_btn {
+    width: 100%;
+  }
+  .registration_side,
+  .authorization_side {
+    padding: 15px;
+  }
+  .send_btn,
+  .user_profile,
+  .user_information {
+    width: 100%;
+  }
+  .conditions_item,
+  .user_info {
+    width: 100%;
+  }
+  .user_information {
+    align-items: center;
+    flex-direction: column;
+  }
+  .user_name,
+  .phone_ {
+    margin-bottom: 20px;
+  }
+  .contact_section {
+    padding: 30px 0 50px;
+  }
+}
+
+@media (max-width: 414px) {
+  .mobile_reservation {
+    font-size: 10px;
+  }
+  .room_item {
+    font-size: 8px;
+  }
+}

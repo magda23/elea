@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "FiraGO";
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FiraGO-Regular.woff2") format("woff2"),
+    url("../fonts/FiraGO-Regular.woff") format("woff"),
+    url("../fonts/FiraGO-Regular.ttf") format("truetype"),
+    url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BPG ExtraSquare Mtavruli";
+  src: url("../fonts/BPGExtraSquareMtavruli.eot");
+  src: url("../fonts/BPGExtraSquareMtavruli.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/BPGExtraSquareMtavruli.woff2") format("woff2"),
+    url("../fonts/BPGExtraSquareMtavruli.woff") format("woff"),
+    url("../fonts/BPGExtraSquareMtavruli.ttf") format("truetype"),
+    url("../fonts/BPGExtraSquareMtavruli.svg#BPGExtraSquareMtavruli")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chromatica rg";
+  src: url("../fonts/Chromatica-Regular.eot");
+  src: url("../fonts/Chromatica-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Chromatica-Regular.woff2") format("woff2"),
+    url("../fonts/Chromatica-Regular.woff") format("woff"),
+    url("../fonts/Chromatica-Regular.ttf") format("truetype"),
+    url("../fonts/Chromatica-Regular.svg#Chromatica-Regular") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chromatica md";
+  src: url("../fonts/Chromatica-Medium.eot");
+  src: url("../fonts/Chromatica-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Chromatica-Medium.woff2") format("woff2"),
+    url("../fonts/Chromatica-Medium.woff") format("woff"),
+    url("../fonts/Chromatica-Medium.ttf") format("truetype"),
+    url("../fonts/Chromatica-Medium.svg#Chromatica-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ALK Katerina";
+  src: url("../fonts/ALKKaterina.eot");
+  src: url("../fonts/ALKKaterina.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ALKKaterina.woff2") format("woff2"),
+    url("../fonts/ALKKaterina.woff") format("woff"),
+    url("../fonts/ALKKaterina.ttf") format("truetype"),
+    url("../fonts/ALKKaterina.svg#ALKKaterina") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BPG Arial";
+  src: url("../fonts/BPGArial.eot");
+  src: url("../fonts/BPGArial.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BPGArial.woff2") format("woff2"),
+    url("../fonts/BPGArial.woff") format("woff"),
+    url("../fonts/BPGArial.ttf") format("truetype"),
+    url("../fonts/BPGArial.svg#BPGArial") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BPG Mrgvlovani";
+  src: url("../fonts/BPGMrgvlovani.eot");
+  src: url("../fonts/BPGMrgvlovani.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BPGMrgvlovani.woff2") format("woff2"),
+    url("../fonts/BPGMrgvlovani.woff") format("woff"),
+    url("../fonts/BPGMrgvlovani.ttf") format("truetype"),
+    url("../fonts/BPGMrgvlovani.svg#BPGMrgvlovani") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  src: url("../fonts/BPGMrgvlovaniCaps2010.eot");
+  src: url("../fonts/BPGMrgvlovaniCaps2010.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/BPGMrgvlovaniCaps2010.woff2") format("woff2"),
+    url("../fonts/BPGMrgvlovaniCaps2010.woff") format("woff"),
+    url("../fonts/BPGMrgvlovaniCaps2010.ttf") format("truetype"),
+    url("../fonts/BPGMrgvlovaniCaps2010.svg#BPGMrgvlovaniCaps2010")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

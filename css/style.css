@@ -1,0 +1,1708 @@
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  overflow-x: hidden !important;
+  font-family: "BPG Mrgvlovani Caps 2010";
+}
+
+main {
+  min-height: calc(100vh - 85px);
+}
+
+.img_fluid {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*mobile_menu*/
+.mobile_menu_block {
+  padding: 10px 0;
+}
+
+.burger_menu {
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-animation: burgerAnimation 3s linear infinite alternate;
+  animation: burgerAnimation 3s linear infinite alternate;
+  width: 30px;
+  height: 23px;
+  padding: 0px 5px;
+  border-radius: 2px;
+}
+
+.burger__ {
+  display: block;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.burger__ i {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  color: #ffa200;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #ffa200;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.burger__ i::before {
+  top: -7px;
+}
+
+.burger__ i::before,
+.burger__ i::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #ffa200;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.burger__ i::after {
+  bottom: -7px;
+}
+
+.burger__.burg_act i {
+  background: transparent;
+}
+
+.burger__.burg_act i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotateZ(45deg);
+}
+
+.burger__.burg_act i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.mobile_navigation {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  border-top: 1px solid #ffa200;
+  width: 100%;
+  height: 100%;
+  top: 108px;
+  left: -2px;
+  padding-top: 20px;
+  margin: 0px !important;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.mobile_navigation .nav_li {
+  color: #1a5871;
+}
+.mobile_navigation .lang_item {
+  color: #1a5871;
+}
+.nav_li {
+  margin-bottom: 10px;
+}
+
+.nav_act {
+  -webkit-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+  -webkit-transition-delay: 0.3s !important;
+  -o-transition-delay: 0.3s !important;
+  transition-delay: 0.3s !important;
+  left: 0px;
+}
+
+.overflow_hidden {
+  overflow: hidden !important;
+}
+
+/*mobile_menu end*/
+.top_header {
+  padding: 12px 0;
+  background-color: #e8e8e8;
+}
+.header_block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.logo_ {
+  width: 199px;
+  height: 122px;
+}
+.mobile_number {
+  font-size: 14px;
+  font-family: "BPG ExtraSquare Mtavruli";
+}
+.phone_icon {
+  width: 11px;
+  height: 11px;
+}
+.lang_item {
+  font-family: "BPG ExtraSquare Mtavruli";
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding-right: 10px;
+  border-right: 1px solid #ffa200;
+}
+.lang_item:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border: none;
+}
+.lang_item.active {
+  color: #ffa200;
+}
+.middle_block {
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.right_side {
+  font-size: 14px;
+}
+.city {
+  margin-right: 15px;
+}
+.degrees_icon {
+  position: absolute;
+  top: -1px;
+  right: -5px;
+}
+.hero_section {
+  background-image: url("../img/elea_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+.nav_block {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_li {
+  margin-right: 30px;
+  position: relative;
+}
+.nav_ul .nav_li {
+  margin-bottom: 0;
+}
+.nav_li:last-child {
+  margin-right: 0;
+}
+
+.nav_li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.nav_li:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.registration_block {
+  display: flex;
+  font-family: "BPG ExtraSquare Mtavruli";
+  position: absolute;
+  right: 0;
+}
+.reservation_title {
+  margin-bottom: 25px;
+  color: #fff;
+}
+.category_boxs {
+  margin-top: 60px;
+  width: 412px;
+  padding: 30px 30px 20px;
+  background-image: linear-gradient(
+    rgba(255, 162, 0, 90%),
+    rgba(255, 162, 0, 90%)
+  );
+  border-radius: 10px;
+}
+.check_in {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.category_sort {
+  width: 337px;
+  margin-bottom: 20px;
+}
+.category_sort input {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  color: #444444;
+}
+.sort_block .category_sort {
+  width: 162px;
+  margin-right: 13px;
+}
+.sort_block .category_sort:last-child {
+  margin-right: 0;
+}
+.items_category .select-options {
+  height: 400px;
+  overflow-y: scroll;
+  display: block;
+}
+
+.items_category .select-options::-webkit-scrollbar {
+  width: 8px;
+  height: 100px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.items_category .select-options::-webkit-scrollbar-thumb {
+  background: #00a9ac;
+  border-radius: 4px;
+}
+
+.items_category .select-options::-webkit-scrollbar-track {
+  background-color: #edf0f5;
+  border-radius: 5px;
+}
+
+.info_li {
+  cursor: pointer;
+}
+
+.info_li,
+.category_,
+.arrow_block i {
+  font-size: 14px;
+  color: #91969f;
+}
+
+.drop_down {
+  position: absolute;
+  z-index: 999;
+  background: #edf0f5;
+  width: 100%;
+  left: 0;
+  padding: 0 0 15px 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px -5px rgb(0 0 0 / 10%);
+  box-shadow: 0 5px 10px -5px rgb(0 0 0 / 10%);
+}
+
+.drop_down ul {
+  padding-top: 10px;
+}
+
+.category_select {
+  padding-bottom: 10px;
+}
+
+.category_title {
+  padding: 0;
+}
+
+.search_btn {
+  margin: 0 auto;
+  width: 162px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "BPG ExtraSquare Mtavruli";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.search_btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.info_section {
+  background-color: #1a5871;
+  color: #fff;
+  position: relative;
+}
+.info_section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 456px;
+  background-color: #54e1bc;
+  z-index: 1;
+}
+
+.news_ {
+  z-index: 9;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  margin-right: 70px;
+}
+.s1 {
+  overflow: hidden;
+}
+.s1 .swiper-button-next {
+  right: 0px;
+}
+.s1 .swiper-button-prev {
+  right: 20px;
+  left: initial;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: initial;
+}
+.s1 .swiper-button-next,
+.s1 .swiper-button-prev {
+  background-image: none;
+  font-size: 20px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.rooms_section {
+  padding: 30px 0;
+}
+
+.rooms_txt {
+  margin-bottom: 30px;
+}
+.see_all {
+  color: #ffa200 !important;
+}
+.sub_title {
+  font-size: 20px;
+  border-right: 1px solid;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+.rooms_item {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  border-radius: 10px;
+  color: #1a5871;
+}
+.room_img {
+  width: 100%;
+  height: 256px;
+}
+
+.room_img img {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rooms_info {
+  border-radius: 0 0 10px 10px;
+  background-color: #fbfbfb;
+  padding: 35px 40px;
+  line-height: normal;
+}
+.rooms_title {
+  margin-bottom: 30px;
+}
+
+.description_ {
+  line-height: normal;
+  font-size: 14px;
+  font-family: "BPG Mrgvlovani";
+}
+
+.footer_ {
+  border-top: 1px solid #000;
+  padding: 28px 0;
+  color: #000;
+  font-family: "BPG ExtraSquare Mtavruli";
+}
+.footer_info {
+  font-size: 14px;
+}
+.footer_span {
+  color: #ffa200;
+}
+.social_item {
+  width: 27px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.nav_right_side .registration_block {
+  position: initial;
+}
+.registration_bg {
+  background-image: url("../img/service-bell-table-restaurant.png");
+  height: 507px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.registration_section {
+  padding-bottom: 100px;
+}
+.reservation_info {
+  position: absolute;
+  top: 380px;
+  flex-direction: column;
+  width: 412px;
+}
+
+.reservation_info .category_boxs {
+  margin-bottom: 25px;
+}
+
+.map {
+  width: 100%;
+  height: 265px;
+  border-radius: 10px;
+}
+
+.registration_info {
+  padding-left: 425px;
+}
+.registration_info .category_boxs {
+  padding: 15px;
+  justify-content: space-between;
+  background: #cfcfcf !important;
+  margin-bottom: 25px;
+}
+.registration_info .category_sort {
+  margin-bottom: 0;
+}
+.registration_info .search_btn {
+  margin: 0;
+  background-color: #ffa200;
+  border: 1px solid #ffa200;
+  font-family: "BPG Mrgvlovani Caps 2010";
+}
+.registration_info .search_btn:hover {
+  background-color: #fff;
+  color: #ffa200;
+}
+.registration_info .select-styled {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.registration_info .select-options {
+  font-size: 12px;
+}
+.registration_info .select-options li {
+  text-indent: 5px;
+}
+.check_day {
+  width: 175px;
+}
+
+.person_ {
+  width: 125px;
+}
+.children_ {
+  width: 106px;
+}
+.gel_ {
+  width: 84px;
+}
+.rooms_tips {
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  background: #cfcfcf;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  padding: 0 8px 0 15px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+.guest {
+  text-align: center;
+  width: 110px;
+  border-right: 1px solid #fff;
+}
+.room_tip {
+  width: 300px;
+}
+.conditions_item {
+  width: 140px;
+}
+.day_items {
+  width: 95px;
+}
+.conditions_item,
+.day_items {
+  height: 100%;
+  background-color: #ffa200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rooms_items {
+  width: 100px;
+  text-align: center;
+}
+
+.terms_ {
+  color: #000;
+  width: 128px;
+  font-size: 10px;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reservation_block {
+  border-bottom: 1px solid #09506d;
+}
+.reservation_block .guest {
+  color: #09506d;
+  border-right: 1px solid #09506d;
+  width: 108px;
+}
+.reservation_info_items {
+  font-size: 10px;
+}
+.apartament_ {
+  font-family: "BPG Mrgvlovani";
+  font-size: 10px;
+  color: #09506d;
+  margin-top: 3px;
+}
+.room_item {
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.room_quantity {
+  color: #09506d;
+}
+.condition_txt {
+  background-color: transparent !important;
+  font-size: 10px;
+  text-align: center;
+}
+.pay_ {
+  font-size: 12px;
+  color: #28a585;
+}
+
+.reservation_btn,
+.total_cost {
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #fff;
+}
+.total_cost {
+  background-color: #000;
+}
+
+.reservation_btn {
+  width: 100px;
+  background-color: #00b33f;
+}
+
+.mobile_reservation {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.gellery_bg {
+  height: 415px;
+  background-image: url("../img/pool.png");
+}
+
+.gallery_section {
+  padding: 50px 0 90px;
+  border-top: 1px solid #000;
+}
+.gallery_img {
+  width: 100%;
+  height: 214px;
+}
+
+.rooms_bg {
+  height: 160px;
+  background-image: url("../img/pool.png");
+  background-position: center;
+}
+.rooms_img {
+  width: 100%;
+  height: 438px;
+  margin-bottom: 30px;
+}
+.rooms_section {
+  padding: 50px 0 20px;
+}
+.room_info {
+  background-color: #cfcfcf;
+  font-size: 18px;
+  height: 65px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #ffa200;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  padding-left: 20px;
+}
+.rooms_img:hover .slide_left {
+  box-shadow: inset 0 0 0 50px #ffa200;
+}
+
+.navigation_block {
+  height: 93px;
+}
+.Swiper_1 .swiper-slide,
+.Swiper_2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.Swiper_1 .swiper-slide img,
+.Swiper_2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Swiper_1 .swiper,
+.Swiper_2 .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Swiper_2 .swiper-slide,
+.Swiper_1 .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.Swiper_1,
+.Swiper_2 {
+  overflow: hidden;
+}
+.Swiper_2 {
+  height: 438px;
+  width: 100%;
+}
+
+.Swiper_1 {
+  height: 138px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.Swiper_1 .swiper-slide {
+  width: 25%;
+  height: 100%;
+}
+
+.Swiper_1 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.Swiper_2 swiper-slide img,
+.Swiper_1 swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mb_35 {
+  margin-bottom: 35px;
+}
+.room_list_block {
+  color: #1a5871;
+  font-size: 14px;
+  font-family: "BPG Mrgvlovani";
+  line-height: normal;
+}
+.list_item {
+  margin-bottom: 10px;
+}
+
+.room_list_block ul {
+  margin-top: 25px;
+}
+.room_list_block ul li {
+  margin-bottom: 8px;
+}
+.room_list_block ul li:last-child {
+  margin-bottom: 0;
+}
+.info_title {
+  font-size: 14px;
+}
+.different_rooms {
+  height: 288px;
+}
+.different_rooms .room_info {
+  font-size: 14px;
+}
+.bg_image {
+  height: 162px;
+  background-image: url("../img/business-hand-with-mobile-phone.png");
+}
+
+.authorization_side {
+  background-color: #cfcfcf;
+  border-radius: 10px 0 0 10px;
+  padding: 50px 50px 70px;
+}
+
+.registration_side {
+  border-radius: 0 10px 10px 0;
+}
+.sign_btn {
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "BPG ExtraSquare Mtavruli";
+  width: 147px;
+  height: 45px;
+  background-color: #ffa200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid #ffa200;
+}
+.sign_btn:hover {
+  background-color: transparent;
+  border: 1px solid #ffa200;
+}
+.registration_btn {
+  background-color: #d6d6d6;
+  border: 1px solid #d6d6d6;
+}
+.registration_btn:hover {
+  background-color: transparent;
+  border: 1px solid #d6d6d6;
+}
+.sing_in_title {
+  font-size: 19px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.registration_title {
+  color: #ffa200;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.input_items input {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  border: none;
+  height: 58px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  color: #a5a5a5;
+}
+
+.input_items input::placeholder {
+  color: #a5a5a5;
+}
+
+.fcheck_box {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.check_box input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.check_box label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.check_box label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px 13px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.check_box input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 13px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.sbm_btn {
+  font-size: 14px;
+  width: 250px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #a5a5a5;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_or_social {
+  position: relative;
+}
+
+.user_name_or_social {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 31px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfcfcf;
+}
+
+.user_or_social::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  z-index: 52;
+  top: 50%;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.social_btn {
+  width: 280px;
+  height: 54px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  background-color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b5a9a;
+}
+
+.social_img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.register_ {
+  width: 220px;
+}
+
+.social_google {
+  color: #f14336;
+}
+
+.registration_side {
+  border-radius: 0 10px 10px 0;
+}
+
+.register_items {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.register_items input {
+  width: 100%;
+  height: 58px;
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  border-radius: 10px;
+  padding-left: 20px;
+  color: #939393;
+  text-overflow: ellipsis;
+}
+
+.register_items input::placeholder {
+  color: #939393;
+}
+
+.required_ {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.password_block {
+  width: 49%;
+}
+
+.register_items .select-box__current {
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.register_items .select-box__input-text {
+  font-size: 16px;
+  color: #939393;
+}
+
+.register_items .select-box__icon {
+  background-color: transparent;
+  right: 25px;
+}
+
+.register_items .select-box__icon img {
+  width: 10px;
+  height: 10px;
+}
+
+.register_items .select-box__option {
+  font-size: 16px;
+}
+
+.register_items .select-box__list {
+  top: 38px;
+  border: none;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+}
+.gender_select {
+  color: #939393;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  border-radius: 10px;
+}
+.gender_select .select-styled {
+  color: #939393;
+}
+.calendar_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28%;
+  height: 100%;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  border-radius: 10px;
+}
+
+.calendar_items .select-styled {
+  font-size: 16px;
+  color: #939393;
+  padding: 0 20px;
+}
+
+.calendar_items .select-options li {
+  font-size: 16px;
+  color: #939393;
+}
+
+.calendar_items .select-styled::after {
+  top: 12px;
+}
+
+.contract_checkbox label {
+  color: #939393;
+}
+
+.contract_checkbox label:before {
+  border: 1px solid #939393;
+}
+
+.contract_checkbox input:checked + label:after {
+  border: solid #939393;
+  border-width: 0 2px 2px 0;
+}
+
+.submit_btn {
+  background-color: #ffa200;
+  color: #fff;
+  border-radius: 10px;
+  width: 250px;
+  height: 55px;
+}
+.registration_side {
+  padding: 50px 30px 0;
+}
+
+.register_row {
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+}
+
+.register_forms .check_box input:checked + label:after {
+  top: 1px;
+}
+
+.contact_section {
+  padding: 40px 0 100px;
+}
+
+.contact_info {
+  margin-bottom: 45px;
+}
+.contact_info i {
+  color: #ffa200;
+  font-size: 20px;
+  width: 20px;
+}
+
+.map_ {
+  width: 100%;
+  height: 457px;
+}
+.contact_form {
+  font-size: 15px;
+  font-family: "BPG Mrgvlovani";
+}
+.contact_us {
+  font-size: 14px;
+}
+.contact_inputs {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.contact_inputs input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  border: none;
+  padding: 20px;
+}
+.txt_area textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  border: none;
+  padding: 20px;
+}
+.contact_inputs input::placeholder,
+.txt_area textarea::placeholder {
+  color: #aeaeae;
+}
+.send_btn {
+  width: 180px;
+  height: 60px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ffa200;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid #ffa200;
+}
+
+.send_btn:hover {
+  background-color: transparent;
+  border: 1px solid #ffa200;
+  color: #ffa200;
+}
+.user_info_items {
+  justify-content: space-between;
+}
+.user_profile {
+  width: 500px;
+}
+.user_info_block {
+  width: 780px;
+}
+.user_title {
+  color: #1a5871;
+  margin-bottom: 30px;
+}
+.user_information {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  padding: 25px 15px;
+  position: relative;
+  width: 412px;
+  margin-left: 90px;
+  display: flex;
+  justify-content: end;
+}
+
+.user_image {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 222px;
+  height: 222px;
+}
+.user_image img {
+  border-radius: 50%;
+}
+.user_info {
+  width: 230px;
+}
+.user_name {
+  margin-bottom: 40px;
+}
+.icon_ {
+  width: 26px;
+}
+.mail {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.phone_ {
+  margin-bottom: 70px;
+  font-size: 14px;
+}
+.edit_profile {
+  font-size: 12px;
+  color: #1193c7;
+}
+
+.user_info_block .rooms_tips {
+  padding-right: 0;
+}
+
+.user_info_block .day_items {
+  border-radius: 0px 10px 0 0;
+  width: 86px;
+}
+
+.user_info_block .total_cost {
+  border-radius: 10px;
+}
+
+.upload_ {
+  width: 28px;
+  height: 27px;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+.upload_ img {
+  border-radius: 0;
+}
+
+.modal-dialog {
+  max-width: 900px !important;
+}
+.ekko-lightbox .modal-content {
+  background-color: transparent;
+  border: none;
+  height: 500px;
+}
+.img-fluid {
+  height: 100%;
+  width: 100%;
+}
+.ekko-lightbox-container {
+  height: 100% !important;
+}
+.ekko-lightbox-item img {
+  object-fit: cover;
+  object-position: center;
+}
+.ekko-lightbox-nav-overlay {
+  color: #fff;
+}
+.select-options {
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.select-options::-webkit-scrollbar {
+  scrollbar-width: none;
+  display: none;
+}
+
+.select-styled::after {
+  content: "";
+  background-image: url("../img/arrows_.svg");
+  right: 10px;
+  width: 18px;
+  height: 20px;
+  transform: initial;
+  border: none;
+  background-repeat: no-repeat;
+}
+.select-styled.active::after {
+  border: none;
+  top: 16px;
+}
+
+.table .thead-dark th {
+  color: #000;
+  font-size: 14px;
+  border: none;
+  background-color: initial;
+}
+
+.room_tip {
+  width: initial;
+}
+
+.terms_ {
+  font-size: 10px !important;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.conditions_item {
+  margin-bottom: 30px;
+}
+.room_item img {
+  width: 15px;
+}
+
+.table thead th {
+  border-bottom: 0;
+  vertical-align: initial;
+}
+.table .thead-dark th:first-child {
+  border-right: 1px solid #fff;
+}
+.table-bordered td,
+.table-bordered th {
+  border: none;
+}
+.table-bordered th:first-child {
+  border-right: 1px solid #09506d;
+  border-top-left-radius: 10px;
+  text-align: center;
+}
+.table-bordered th:last-child {
+  border-top-right-radius: 10px;
+}
+.yellow_bg {
+  color: #fff !important;
+  background-color: #ffa200 !important;
+}
+.table .thead-dark tr {
+  background-color: #cfcfcf;
+  border-bottom: 0;
+}
+
+.table tr {
+  border-bottom: 1px solid #09506d;
+}
+.table tr:last-child {
+  border: none;
+}
+.day_items {
+  width: 80px;
+}
+
+.room_input {
+  margin: 0 auto;
+  width: 54px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.room_input .select-styled {
+  border: 1px solid #000;
+}
+.room_input .select-styled::after {
+  right: 3px;
+  top: 8px;
+}
+
+.room_input .rev-select {
+  height: 40px;
+}
+
+/*reservation_info*/
+.reservation_box {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.booking_info {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.br {
+  border-right: 1px solid #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  padding-right: 15px;
+}
+.br:last-child {
+  border: none;
+  padding-right: 0;
+}
+.check_in_day {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #707070;
+}
+
+.w-240 {
+  width: 240px;
+}
+.w-220 {
+  width: 220px;
+}
+.w-150 {
+  width: 150px;
+}
+.w-120 {
+  width: 120px;
+}
+
+.color_dark {
+  color: #00b33f;
+}
+
+.mobile_reservation .category_boxs {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.mobile_reservation .category_sort,
+.mobile_reservation .search_btn {
+  width: 49% !important;
+}
+.mobile_reservation .category_sort:last-child {
+  margin-bottom: 20px;
+}
+.mobile_reservation .search_btn {
+  margin: 0;
+}
+
+/*booking_page*/
+.booking_block {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-size: 14px;
+}
+.booking_info_block {
+  position: relative;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+}
+.booking_info_block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #cfcfcf;
+  width: 100%;
+  padding: 23px;
+  border-radius: 5px 5px 0 0;
+}
+.booking_title {
+  margin-bottom: 30px;
+}
+.booking_item {
+  z-index: 1;
+  padding-bottom: 15px;
+  border-radius: 15px 15px 0 0;
+}
+.booking_room_img {
+  width: 220px;
+  height: 146px;
+}
+.booking_room_img img {
+  border-radius: 5px;
+}
+
+.room_tipe {
+  border-radius: 5px 0 0 0;
+}
+
+.booking_room_type {
+  width: 350px;
+}
+.booking_room_type::after {
+  content: none !important;
+}
+.accomodation_,
+.sum_block {
+  padding: 0 60px;
+  justify-content: center;
+}
+
+.select_serivce {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking_status {
+  border-radius: 0 5px 0 0;
+}
+
+.transfer_block {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+.transfer_block .form-group {
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 1rem;
+}
+.transfer_block .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.transfer_block .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+  color: #1193c7;
+  display: flex;
+  align-items: center;
+}
+
+.transfer_block .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #1193c7;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.transfer_block .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  border: solid #1193c7;
+  border-radius: 50%;
+}
+
+.comment_ {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+.txtarea_block {
+  margin-bottom: 20px;
+}
+.txtarea_block textarea {
+  width: 100%;
+  height: 78px;
+  overflow-y: scroll;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  padding: 15px;
+}
+.txtarea_block textarea::-webkit-scrollbar {
+  display: none;
+}
+.close_btn {
+  font-size: 12px;
+}
+.close_btn i {
+  font-size: 22px;
+  color: #ffa200;
+}
+.price_block {
+  font-size: 14px;
+  text-align: end;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.price_block span {
+  color: #00b33f;
+}
+.booking_end_block p {
+  font-size: 14px;
+  text-align: end;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+.booking_btns {
+  justify-content: flex-end;
+}
+.booking_btn {
+  width: 235px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.grey_ {
+  color: #000;
+  background-color: #cfcfcf;
+  border: 1px solid #cfcfcf;
+}
+.grey_:hover {
+  border: 1px solid #cfcfcf;
+  background-color: #fff;
+}
+.blue_ {
+  color: #fff;
+  background-color: #1193c7;
+  border: 1px solid #1193c7;
+}
+.blue_:hover {
+  color: #1193c7;
+  background-color: #fff;
+}
+.green_ {
+  background-color: #00b33f;
+  border: 1px solid #00b33f;
+  color: #fff;
+}
+.green_:hover {
+  color: #00b33f;
+  background-color: #fff;
+}
+/*recovery password*/
+.password_recovery {
+  margin: 0 auto;
+}
+.password_recovery .registration_side {
+  padding: 50px;
+}
+
+.recovery_password_bg {
+  height: 200px;
+}
